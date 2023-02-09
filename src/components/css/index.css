@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+}
+
+.advice-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-grayish-blue);
+  /* margin-top: 10rem !important; */
+  border-radius: 0.7rem;
+  position: relative;
+  padding: 2.5rem 2rem;
+  margin: auto;
+  max-width: 35rem;
+}
+.advice-id {
+  color: var(--neon-green);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3ch;
+  margin-bottom: 2rem;
+}
+.advice {
+  color: var(--light-cyan);
+  /* margin-top: 1rem; */
+  font-size: 28px;
+  text-align: center;
+  margin: auto;
+}
+.divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  content: url(../../assets/images/pattern-divider-desktop.svg);
+}
+.dice_btn {
+  background-color: var(--neon-green);
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10%;
+  cursor: pointer;
+  transition: 700ms ease;
+}
+.dice_btn:hover {
+  box-shadow: 0px 0px 25px 0px var(--neon-green);
+}
+.dice_btn:active {
+  transform: translateY(4px);
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8rem;
+    color: var(--light-cyan);
+  }
+  .attribution a {
+    color: var(--neon-green);
+  }
+@media (max-width: 700px) {
+  .spinner{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .advice-container {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .divider {
+    content: url(../../assets/images/pattern-divider-mobile.svg);
+  }
+}
