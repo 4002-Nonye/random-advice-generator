@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [SOLUTION URL](https://www.frontendmentor.io/solutions/randomadvicegeneratorwithreactjs-RQu9KLi2lh)
 - Live Site URL: [LIVE SITE](https://advice-generator-with-react-4002-nonye.vercel.app/)
 
 ## My process
@@ -46,6 +46,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/the_altekid)
+- Frontend Mentor - [@Nono](https://www.frontendmentor.io/profile/4002-Nonye)
+- Twitter - [@Nonye](https://www.twitter.com/the_altekid)
 
