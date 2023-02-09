@@ -5,12 +5,9 @@ import Attribution from "./Attribution";
 import FadeLoader from "react-spinners/FadeLoader";
 
 const AdviceGenerator = () => {
-
-
   const [isLoading, setLoading] = useState(false);
   const [advice, setAdvice] = useState("Click on Dice to get an Advice😁");
   const [id, setId] = useState(0);
-
 
   const onDiceClick = async () => {
     setLoading(true);
@@ -31,24 +28,33 @@ const AdviceGenerator = () => {
 
   return (
     <div>
-    <div className="spinner">{isLoading ? <FadeLoader color="#52ffa8" /> : null}</div>  
-      <div className="advice-container">
-        <div className="advice-id">
-          ADVICE <span>{`# ${id}`}</span>
+         <div className="spinner">
+          {isLoading ? <FadeLoader color="#52ffa8" /> : null}
         </div>
-        <div className="advice">{`"${advice}"`}</div>
-        <br className="divider" />
-        <button className="dice_btn" onClick={onDiceClick}>
-          <img src={dice} alt="dice"></img>
-        </button>
+      <main>
+     
+        <div>
+          <div className="advice-container">
+            <div className="advice-id">
+              ADVICE <span>{`# ${id}`}</span>
+            </div>
+            <div className="advice">{`"${advice}"`}</div>
+            <br className="divider" />
+            <button className="dice_btn" onClick={onDiceClick}>
+              <img src={dice} alt="dice"></img>
+            </button>
+          </div>
+        </div>
+      </main>
+      <div>
+        {" "}
+        <footer>
+          <Attribution
+            hrefMentor="https://www.frontendmentor.io?ref=challenge"
+            hrefOwn="https://github.com/4002-Nonye"
+          />
+        </footer>
       </div>
-      <footer>
-        <Attribution
-          hrefMentor="https://www.frontendmentor.io?ref=challenge"
-          hrefOwn="https://github.com/4002-Nonye"
-        />
-         
-      </footer>
     </div>
   );
 };
