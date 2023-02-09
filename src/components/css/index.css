@@ -24,6 +24,9 @@ body {
   margin: auto;
   height: 100vh;
 }
+.spinner {
+  height: 100px;
+}
 
 .advice-container {
   display: flex;
@@ -31,7 +34,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--dark-grayish-blue);
-  /* margin-top: 10rem !important; */
   border-radius: 0.7rem;
   position: relative;
   padding: 2.5rem 2rem;
@@ -78,16 +80,16 @@ body {
 }
 
 .attribution {
-    font-size: 16px;
-    text-align: center;
-    margin-top: 8rem;
-    color: var(--light-cyan);
-  }
-  .attribution a {
-    color: var(--neon-green);
-  }
+  font-size: 16px;
+  text-align: center;
+  margin-top: 8rem;
+  color: var(--light-cyan);
+}
+.attribution a {
+  color: var(--neon-green);
+}
 @media (max-width: 700px) {
-  .spinner{
+  .spinner {
     display: flex;
     flex-direction: column;
     padding: 2rem;
