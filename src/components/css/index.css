@@ -38,7 +38,8 @@ body {
   position: relative;
   padding: 2.5rem 2rem;
   margin: auto;
-  max-width: 35rem;
+  width: 550px;
+  height: 340px;
 }
 .advice-id {
   color: var(--neon-green);
@@ -46,11 +47,10 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.3ch;
-  margin-bottom: 2rem;
+ 
 }
 .advice {
   color: var(--light-cyan);
-  /* margin-top: 1rem; */
   font-size: 28px;
   text-align: center;
   margin: auto;
@@ -96,6 +96,7 @@ body {
   }
   .advice-container {
     width: 90%;
+    height: 400px;
     padding: 2rem;
   }
 }
